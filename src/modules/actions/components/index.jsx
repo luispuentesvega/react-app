@@ -19,9 +19,7 @@ const transitionProps = {
 
 const Component = ({ status, initActions, clearActions }) => (
   <Fragment>
-    <h1>New Sample to test</h1>
-    <h1>Jenkis should update automatically</h1>
-    <h1>Status: {status}</h1>
+    <h1>Statusesssss: {status}</h1>
     <TransitionGroup>
       {status !== "idle" && (
         <CSSTransition {...transitionProps}>
