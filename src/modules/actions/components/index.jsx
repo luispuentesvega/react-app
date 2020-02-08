@@ -19,7 +19,7 @@ const transitionProps = {
 
 const Component = ({ status, initActions, clearActions }) => (
   <Fragment>
-    <h1>Statusesssssssaa: {status}</h1>
+    <h1>Status: {status}</h1>
     <TransitionGroup>
       {status !== "idle" && (
         <CSSTransition {...transitionProps}>
@@ -28,7 +28,7 @@ const Component = ({ status, initActions, clearActions }) => (
       )}
       {status === "idle" && (
         <CSSTransition {...transitionProps}>
-          <button onClick={clearActions}>Clear</button>
+          <button onClick={clearActions}>Clear..</button>
         </CSSTransition>
       )}
     </TransitionGroup>
